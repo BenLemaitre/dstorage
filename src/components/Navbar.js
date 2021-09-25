@@ -24,14 +24,16 @@ class Navbar extends Component {
         <ul className="navbar-nav px-3">
           <li>
             <small id="account">
-              <p
+              <a
                 target="_blank"
                 alt=""
                 className="text-white"
                 rel="noopener noreferrer"
+                href={"https://etherscan.io/address/" + this.props.account}
               >
-                0x0
-              </p>
+                {this.props.account.substring(0, 6)}...
+                {this.props.account.substring(38, 42)}
+              </a>
             </small>
             {this.props.account ? (
               <img

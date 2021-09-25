@@ -21,7 +21,7 @@ module.exports = {
     },
   },
   contracts_directory: "./src/contracts/",
-  contacts_build_directory: "./src/abis",
+  contracts_build_directory: "./src/abis",
   // Configure your compilers
   compilers: {
     solc: {
