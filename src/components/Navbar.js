@@ -8,7 +8,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-dark bg-dark p-0 text-monospace">
         <a
           className="navbar-brand col-sm-3 col-md-2 mr-0"
-          href="http://google.com/"
+          href="http://github.com/BenLemaitre"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -24,14 +24,14 @@ class Navbar extends Component {
         <ul className="navbar-nav px-3">
           <li>
             <small id="account">
-              <a
+              <p
                 target="_blank"
                 alt=""
                 className="text-white"
                 rel="noopener noreferrer"
               >
                 0x0
-              </a>
+              </p>
             </small>
             {this.props.account ? (
               <img
