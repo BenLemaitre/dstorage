@@ -86,33 +86,6 @@ class App extends Component {
     } catch (error) {
       console.log(error);
     }
-    // await ipfs.add(this.state.buffer, (error, result) => {
-    //   console.log(result);
-    //   if (error) {
-    //     console.error(error);
-    //   } else {
-    //     this.setState({ loading: true });
-    //     const { type, name } = this.state;
-
-    //     this.state.dstorage.methods
-    //       .uploadFile(result[0].hash, result[0].size, type, name, description)
-    //       .send({ from: this.state.account })
-    //       .on("transactionHash", (hash) => {
-    //         this.setState({
-    //           loading: false,
-    //           type: null,
-    //           name: null,
-    //         });
-    //         window.location.reload();
-    //       })
-    //       .on("error", (e) => {
-    //         window.alert("Error");
-    //         this.setState({
-    //           loading: false,
-    //         });
-    //       });
-    //   }
-    // });
   };
 
   captureFile = (event) => {
